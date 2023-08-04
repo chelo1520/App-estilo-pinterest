@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finterest</title>
+  <%- include("partials/head") %>
+</head>
+<body>
+  
+  <%- include("partials/navigation") %>
+  <div class="container p-4 d-flex flex-wrap justify-content-center">
+    <input type="text" name="search" id="search" placeholder="Search...">
+  </div>
+
+  <div class="conatiner p-4 d-flex flex-wrap justify-content-center">
+    <div class="row">
+      <div class="card-columns" id="cont-img">
+          <% images.forEach(function(image) { %>
+            <div class="card">
+                <a href="/image/<%= image._id %>">
+                  <img src="<%= image.path %>" alt="" class="img">
+                </a>
+                <p class="imgTitle"><%= image.title %></p>
+            </div>
+          <% }) %>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/search.js"></script>
+  <%- include("partials/bts") %>  
+  
+</body>
+</html>

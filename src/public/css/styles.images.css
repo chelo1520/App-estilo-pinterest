@@ -1,0 +1,113 @@
+ /* HOME */
+
+#cont-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  #cont-img .card {
+    border-radius: 10px;
+  }
+
+.card{
+  box-shadow: 0 0 5px rgb(185, 184, 184);
+  min-width: 200px;
+  max-width: 250px;
+  height: fit-content;
+}
+
+
+.links{
+  border: 1px solid transparent;
+  transition: all .3s;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.links:hover {
+  border: 1px solid #0d6efd;
+  color: #0d6efd;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+
+ /* UPLOAD */
+
+ #contentImg{
+  margin: 0;
+ }
+
+#inputGroupFile02{
+  display: none;
+}
+
+.btn{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#visualImg{
+  max-width: 320px;
+  margin-top: 10px;
+}
+
+#labelChoose{
+  margin-bottom: 0;
+}
+
+ /* PROFILE */
+
+ #contentDesc{
+  display: flex;
+  justify-content: center;
+ }
+
+ #imgProfile{
+  border-radius: 10px;
+  max-width: 300px;
+  box-shadow: 0 0 5px rgb(185, 184, 184);
+ }
+
+ #contImg{
+  display: flex;
+  justify-content: center;
+ }
+
+ #time{
+  font-weight: 200;
+ }
+
+ .col-md-2{
+  margin-top: 20px;
+ }
+
+ /* BUSCADOR */
+
+ .filter {
+  display: none;
+ }
+
+.card p{
+  display: none;
+}
+
+#search {
+  border-radius: 10px;
+  min-width: 200px;
+  max-width: 500px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(187, 184, 184);
+  padding: 5px 10px 5px 10px;
+}
